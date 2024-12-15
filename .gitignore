@@ -1,2 +1,5 @@
 ### COMPILE ###
 out/
+arch/arm64/boot/Image
+build_kernel.sh
+buildmenu
