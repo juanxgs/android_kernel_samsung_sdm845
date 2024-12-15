@@ -506,6 +506,10 @@ ifneq ($(filter install,$(MAKECMDGOALS)),)
         endif
 endif
 
+PLATFORM_VERSION ?= 10
+@echo "PLATFORM_VERSION: $(PLATFORM_VERSION)"
+export PLATFORM_VERSION
+
 ifeq ($(cc-name),clang)
 ifneq ($(CROSS_COMPILE),)
 CLANG_TRIPLE	?= $(CROSS_COMPILE)
